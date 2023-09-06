@@ -90,12 +90,14 @@ var student = {
     class: "fsc",
     rollno: 32,
     section: "hero",
-    pass: true
+    pass: true,
+    marks: 121
 };
 var student2 = {
     class: "fsc",
     rollno: 34,
     section: "hero",
-    pass: true
+    pass: true,
+    marks: 123
 };
 console.log(student.rollno, student2.rollno);
