@@ -74,7 +74,7 @@ console.log(data);
 var read = userNames.forEach((read:string,i:number,fullArray:string[])=>{
 console.log("usernames",read);
 console.log("i=",i);
-console.log("fullarray=",userNames);
+ console.log("fullarray=",userNames);
 })
 let car ={
     model:"v 8",

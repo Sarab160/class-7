@@ -60,7 +60,38 @@ for(let i=0; i<cars.length; i++){
     console.log(car.inuse);
     console.log(car.colour);
     console.log(car.modelyear);
-    
-    
+}
+
+var names3:string = "aslam"
+var quote:string = "loskdhglkshgliwrrhjglilsiflkwrjgioerjws"
+console.log(names3,"once said,",`"${quote}"`);
+
+var num8:number = 7;
+if(num8>7){
+    console.log("hello");
+}
+else{
+    console.log("hell");
     
 }
+var friuts:string[] = ["apple","mango"];
+if(friuts[0]=="apple"){
+    console.log('is yu like it');
+    
+}
+var names5:string[] = ["cheema",'sarab'];
+// var hellonames=names5.forEach((names5)=>{
+//     console.log("names",hellonames);
+    
+//})
+// var read = names5.forEach((read:string,i:number,fullArray:string[])=>{
+//     console.log("usernames",read);
+//     console.log("i=",i);
+//      console.log("fullarray=",names5);
+//     })
+var read = names5.forEach((names5:string,i:number,fullarray:string[])=>{
+    console.log(read);
+    console.log(i);
+    console.log(names5);
+    
+})
