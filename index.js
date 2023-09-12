@@ -1,4 +1,13 @@
 "use strict";
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
 let numbers = [2, 3, 3, 4, 6, 5, 45];
 var wave = numbers.map((data) => {
     if (data < 18) {
@@ -101,3 +110,50 @@ var student2 = {
     marks: 123
 };
 console.log(student.rollno, student2.rollno);
+//Async is ma time include hota ha
+//sync ya vo wala code jo zada time consuming nhi krta 
+function _name() {
+    return __awaiter(this, void 0, void 0, function* () {
+    });
+}
+console.log("sarab");
+setTimeout(() => {
+    //  console.log("in settimeout");
+}, 5000);
+console.log('cheema');
+//settimeout ma time lagata ha ka ya fun kitni daar bad chala ga
+//sarab ka code print hona ka 5 sec bad set wala function chala ga
+//time apni marzi la skta ha 1000 ka mtlb 1 sec
+function hello() {
+    console.log("end");
+}
+//setInterval(hello,1000);//ya code 1 sec ka bad chalta raha ga bar bar infinite time tak
+//setinterval or settimeout almost same ha 
+//settimeout ik dafa code chalata ha or setinterval code ko chalta raha ga
+//os time ka bad chalta raha jitna osko time diya gya hoga 
+//like agr 1000 ha to setinterval am code 1 sec ka bad chalta raha ga
+// var count =0;
+// let interval = setInterval(()=>{
+//     hello();
+//     count++;
+//     if(count==2){
+// //clearInterval(interval)
+//     }
+// },2000);//ya setinterval ko use kar ka code print ho ga sirf 2 time
+let car2 = {
+    model: "civic",
+    brand: "honda"
+};
+class Car2 {
+    constructor() {
+        this.model = "";
+        this.brand = "";
+    }
+}
+let newcar = new Car2(); //new ka keyword zarori ha
+newcar.brand = "bmw";
+newcar.model = "M4 competititon";
+// console.log(newcar);
+// console.log(car2);
+//constructor not 
+// promise

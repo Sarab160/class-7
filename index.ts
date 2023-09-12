@@ -109,6 +109,50 @@ var student2:Typer = {
     marks: 123
 }
 console.log(student.rollno,student2.rollno);
+ //Async is ma time include hota ha
+ //sync ya vo wala code jo zada time consuming nhi krta 
+async function _name() {
+    
+}
+console.log("sarab");
 
+setTimeout(()=>{
+  //  console.log("in settimeout");
+    
+},5000)
+console.log('cheema');
 
-
+//settimeout ma time lagata ha ka ya fun kitni daar bad chala ga
+//sarab ka code print hona ka 5 sec bad set wala function chala ga
+//time apni marzi la skta ha 1000 ka mtlb 1 sec
+function hello(){
+    console.log("end");
+}
+//setInterval(hello,1000);//ya code 1 sec ka bad chalta raha ga bar bar infinite time tak
+//setinterval or settimeout almost same ha 
+//settimeout ik dafa code chalata ha or setinterval code ko chalta raha ga
+//os time ka bad chalta raha jitna osko time diya gya hoga 
+//like agr 1000 ha to setinterval am code 1 sec ka bad chalta raha ga
+// var count =0;
+// let interval = setInterval(()=>{
+//     hello();
+//     count++;
+//     if(count==2){
+// //clearInterval(interval)
+//     }
+// },2000);//ya setinterval ko use kar ka code print ho ga sirf 2 time
+let car2 = {
+    model:"civic",
+    brand:"honda"
+};
+class Car2 {
+    model:string ="";
+    brand:string = "";
+}
+let newcar= new Car2();//new ka keyword zarori ha
+newcar.brand = "bmw"
+newcar.model = "M4 competititon"
+// console.log(newcar);
+// console.log(car2);
+//constructor not 
+// promise

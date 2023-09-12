@@ -86,3 +86,27 @@ var read = names5.forEach((names5, i, fullarray) => {
     console.log(i);
     console.log(names5);
 });
+// Define an array of friend names
+const names7 = ["Alice", "Bob", "Charlie", "David", "Eve"];
+// Using a for loop to print each name
+// for (let i = 0; i < names7.length; i++) {
+//   console.log(names7[i]);
+// }
+// Using forEach to print each name
+names7.forEach((name7) => {
+    // console.log(name7);
+});
+// Define an array of favorite motorcycles
+const motorcycles = ["Honda", "Yamaha", "Kawasaki", "Ducati", "BMW"];
+for (const motorcycle of motorcycles) {
+    // console.log(`I would like to own a ${motorcycle} motorcycle.`);
+}
+// Store the person's name with whitespace characters
+const nameWithWhitespace = "\t\tJohn Doe\n";
+// Print the name with whitespace
+console.log("Name with whitespace:");
+console.log(nameWithWhitespace);
+// Strip the whitespace and print the name
+const strippedName = nameWithWhitespace.trim();
+console.log("\nName after stripping whitespace:");
+console.log(strippedName);
