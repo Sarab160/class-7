@@ -108,5 +108,30 @@ console.log("Name with whitespace:");
 console.log(nameWithWhitespace);
 // Strip the whitespace and print the name
 const strippedName = nameWithWhitespace.trim();
-console.log("\nName after stripping whitespace:");
-console.log(strippedName);
+// console.log("\nName after stripping whitespace:");
+// console.log(strippedName);
+function makeGreat(originalMagicians) {
+    const greatMagicians = []; // Create a new empty array to store the modified names
+    // Iterate through the original array and add "the Great" to each name
+    for (const magician of originalMagicians) {
+        const greatMagician = magician + " the Great";
+        greatMagicians.push(greatMagician);
+    }
+    return greatMagicians; // Return the new array with modified names
+}
+// Function to show magicians
+function showMagicians(magicianNames) {
+    for (const magician of magicianNames) {
+        console.log(magician);
+    }
+}
+// Create an array of magician's names
+const magicians = ["Harry Houdini", "David Copperfield", "Penn Jillette", "Teller", "Derren Brown"];
+// Call makeGreat with a copy of the original array
+const greatMagicians = makeGreat([...magicians]);
+// Display the original array
+// console.log("Original Magicians:");
+// showMagicians(magicians);
+// Display the array with "the Great" added to each name
+// console.log("\nMagicians with 'the Great':");
+// showMagicians(greatMagicians);

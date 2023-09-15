@@ -157,3 +157,21 @@ newcar.model = "M4 competititon";
 // console.log(car2);
 //constructor not 
 // promise
+function gretam(mag) {
+    const magician1 = [];
+    for (let i = 0; i < mag.length; i++) {
+        const magician = i + "the great";
+        magician1.push(magician);
+    }
+    return magician1;
+}
+function shownames(names) {
+    for (let l = 0; l < names.length; l++) {
+        console.log(names[l]);
+    }
+}
+const name3 = ["herry", 'love', "joker"];
+const magician1 = gretam([...name3]);
+console.log("original ");
+shownames(name3);
+shownames(magician1);
