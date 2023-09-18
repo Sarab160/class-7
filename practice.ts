@@ -20,3 +20,79 @@ var number = 6;
 var num1 = 6;
 var num2:boolean = true&&true;
 console.log(num2);
+let myArray: number[] = [1, 2, 3, 4, 5];
+
+// Use a for loop to remove elements from the end until the array is empty
+for (let i = myArray.length - 1; i >= 0; i--) {
+     myArray.pop();
+    console.log(myArray);
+    
+}
+
+ // This will print an empty array: []
+// Store the numbers 1 through 9 in an array
+
+
+
+    // Use an if-else chain to determine the proper ordinal ending
+    
+    const numbers2: number[] = [1, 2, 3, 4, 5];
+
+    // Attempt to access an index that is out of bounds
+    const index = 10;
+//     console.log(`Accessing element at index ${index}: ${numbers2[index]}`);
+    
+//     const validIndex = 2; // Use a valid index within the bounds
+// console.log(`Accessing element at index ${validIndex}: ${numbers2[validIndex]}`);
+
+    // Function to create an album object
+function make_album(artist: string, title: string, tracks?: number): { artist: string; title: string; tracks?: number } {
+    const album = {
+        artist: artist,
+        title: title,
+    };
+
+    // if (tracks !== undefined) {
+    //     album.tracks = tracks;
+    // }
+
+    return album;
+}
+
+// Create three album objects using the make_album function
+const album1 = make_album("Artist1", "Album Title 1");
+const album2 = make_album("Artist2", "Album Title 2", 12); // With a specified number of tracks
+const album3 = make_album("Artist3", "Album Title 3");
+
+// Print the album objects
+console.log(album1);
+console.log(album2);
+console.log(album3);
+var hero:string[] = ["sarab","cheema","wasif"];
+for(let i=0;i<hero.length;i++){
+    console.log(`hello ${hero[i]}`);
+    
+}
+// var help:string[] = ["hello","hy"];
+// var help1:string= "hn";
+// help.splice(help1,0,help)
+// console.log(help);
+let myArray1: number[] = [1, 2, 3, 4, 5];
+const indexToInsertAt: number = 2; // Index at which you want to add the value
+const valueToAdd: number = 99; // The value you want to insert
+
+// Using splice to add the value at the specified index
+myArray1.splice(indexToInsertAt, 0, valueToAdd);
+
+console.log(myArray1); // [1, 2, 99, 3, 4, 5]
+
+
+let myArray2: string[] = ["Alice", "Bob", "Charlie", "David"];
+let newName: string = "Eve";
+
+// Insert the new name in the middle of the array
+const middleIndex = Math.floor(myArray2.length / 2);
+myArray2.splice(middleIndex, 0, newName);
+
+console.log(myArray2); // ["Alice", "Bob", "Eve", "Charlie", "David"]
+
